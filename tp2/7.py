@@ -6,10 +6,18 @@ la primera. Por ejemplo, si lista1 = [8, 1, 3] y lista2 = [5, 9, 7], lista 1 deb
 
 '''
 
-def Main():
-    lista1 = [8, 1, 3]
-    lista1[0::0] = [5, 9, 7]
+def intercalar(lista1,lista2):
+    hasta=len(lista1) 
+    for i in range(0,hasta):
+        lista1[2*i+1:2*i+1]=lista2[i:i+1]
+    # lista1[1:1] = lista2[0:1] [8,5,1,3]
+
+def main():
+    lista1=[8,1,3]
+    lista2=[5,9,7]
+    intercalar(lista1,lista2)
     print(lista1)
 
+
 if __name__ == '__main__':
-    Main()
+    main()

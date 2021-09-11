@@ -8,10 +8,10 @@ se mostrará un mensaje en pantalla y se lo contará como un intento más.
 from random import randint
 
 def Main():
-    randomNumber = randint(1,100)
+    randomNumber = randint(1,500)
     while True:
         try:
-            number = int(input(f'Adivina el numero:{randomNumber} '))
+            number = int(input(f'Adivina el numero: '))
             assert number == randomNumber
             print(f'Adivinaste el numero: {number}')
             break

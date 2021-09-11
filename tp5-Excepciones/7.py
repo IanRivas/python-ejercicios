@@ -11,16 +11,16 @@ def Main():
     randomNumber = randint(1,100)
     while True:
         try:
-            number = int(input('Adivina el numero: '))
+            number = int(input(f'Adivina el numero:{randomNumber} '))
             assert number == randomNumber
             print(f'Adivinaste el numero: {number}')
             break
         except (ValueError, AssertionError):
             if number < randomNumber:
-                print('menos')
+                print('mas')
                 continue
             elif number > randomNumber:
-                print(f'mas')
+                print('menos')
                 continue
 
 

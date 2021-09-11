@@ -28,8 +28,8 @@ def segunda_version(butacas,n,m):
         liberados += sum(butacas[f])
     return ((n*m)-liberados)
 
-# def butacas_libres(butacas,n,m):
-#      return (n*m) - sum([sum(butacas[f]) for f in range(n)])
+def butacas_libres_3(butacas,n,m):
+     return (n*m) - sum([sum(butacas[f]) for f in range(n)])
 
 butacas_libres = lambda butacas,n,m: (n*m) - sum([sum(butacas[f]) for f in range(n)])
   
